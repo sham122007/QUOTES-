@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+
+<style>
+Body{
+  background: url("https://c4.wallpaperflare.com/wallpaper/764/505/66/baby-groot-4k-hd-superheroes-wallpaper-preview.jpg");
+  background-repeat:no-repeat;
+  background-size: cover
+  
+}
+#quote-contain{
+  width:100vw;
+  height:100vh;
+  display:flex;flex-direction:column;
+  align-items:center;
+  margin:0auto;
+}
+#quote-contain{
+ padding-left:240px;
+ 
+}
+#contain{
+  background-color:skyblue;
+  padding:10px;
+  margin:10px;
+  border-radius:20px;
+}
+button{
+  background-color:pink;
+  margin-left:40px;
+  border-radius:30px;
+}
+
+button:hover{
+  background-color:yellow;
+}
+#head{
+  color:black;
+  font-family:helvetica;
+}
+#contain{
+  font-family: cursive;
+}
+.ji{
+  
+}
+</style>
+</head>
+<body>
+  
+  <div class="j1"</div>
+
+<div id="quote-contain">
+  <div id="head"><div class="ji">
+    <h1>Quotes genetrator</h1>
+    </div></div>
+  <div id="contain">
+    <p id="j1">Its not over until is over</p>
+    
+    <button onclick="gen()">Generate</button>
+  </div>
+</div>
+
+      
+<script>
+let j1 = document.getElementById("j1");
+
+j1.innerHTML = "Doing is Learning";
+
+let quotes = [
+
+"Stay Hungry. Stay Foolish.",
+
+"Good Artists Copy, Great Artists Steal.",
+
+"Argue with idiots, and you become an idiot.", "Be yourself; everyone else is already taken.", "Simplicity is the ultimate sophistication.",
+  ];
+  
+  function gen(){
+    let random = Math.floor(Math.random()*quotes.length);
+    j1.innerHTML = quotes[random];
+  }
+
+
+</script>
+
+</body>
+</html>
